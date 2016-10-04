@@ -1,0 +1,100 @@
+$wid_1: 400px;
+$wid_2: 550px;
+$wid_3: 750px;
+$wid_4: 1000px;
+$wid_5: 1200px;
+
+@media (max-width: $wid_1) {
+	
+	.container {
+		width: 100%;
+	}
+	
+	body {
+
+		.wrapper {
+			&.header {
+				.container {
+					.wrapper {
+						min-height: 70px;
+						.mailMenu {
+							display: none;
+						}
+						.mainMenuButton {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+@media (min-width: $wid_1) {
+	
+	.container {
+		width: 100%;
+	}
+
+	body {
+
+		.wrapper {
+			&.header {
+				.container {
+					.wrapper {
+						min-height: 70px;
+						.mailMenu {
+							display: none;
+						}
+						.mainMenuButton {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+@media (min-width: $wid_2) {
+
+}
+
+@media (min-width: $wid_3) {
+
+}
+
+@media (min-width: $wid_4) {
+
+	.container {
+		width: $site_w;
+	}
+
+	body {
+
+		.wrapper {
+			&.header {
+				.container {
+					.wrapper {
+						.mailMenu {
+							display: block;
+						}
+						.mainMenuButton {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+@media (min-width: $wid_5) {
+
+}
