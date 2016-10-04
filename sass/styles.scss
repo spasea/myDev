@@ -1,0 +1,54 @@
+//some libs
+@import "_cleaner.scss";
+@import "_mixins.scss";
+
+//main colors
+$c_main: #009D8D;
+
+//load fonts
+@include loadFont('Open+Sans');
+@include loadFont('Roboto');
+
+//main dimentions
+$site_w: 980px;
+
+//some font constants
+$thin: 100;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$sbold: 600;
+$bold: 700;
+$ubold: 900;
+
+$rob: 'Roboto', sans-serif;
+$ops: 'Open Sans', sans-serif;
+
+//some constant classes
+.container {
+	@include center($site_w);
+	height: 100%;
+	padding: 0;
+}
+
+.wrapper {
+	width: 100%;
+	position: relative;
+	&.i {
+		display: inline-block;
+	}
+}
+
+.leftDiv {
+	float: left;
+	display: block;
+}
+
+.rightDiv {
+	float: right;
+	display: block;
+}
+
+@import "_main";
+
+@import "_responsive.scss";

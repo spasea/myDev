@@ -1,0 +1,80 @@
+@mixin custom-link($color: #000) {
+	color: $color;
+	text-decoration: none;
+}
+@mixin center($width: 'no') {
+	display: block;
+	margin: 0 auto;
+	@if $width == 'no' {
+	} @else {
+		width: $width;
+	}
+	float: none;
+}
+@mixin center_i($width) {
+	display: block !important;
+	margin: 0 auto !important;
+	width: $width !important;
+	float: none !important;
+}
+@mixin center_w($width) {
+	display: block !important;
+	margin: 0 auto !important;
+	width: $width;
+	float: none !important;
+}
+@mixin loadFont($font, $location: 'rem') {
+	@if $location == 'rem' {
+		@import url('https://fonts.googleapis.com/css?family='+$font+':300,400,500,600,700,800,900');
+	}
+	@if $location == 'loc' {
+		@import url('../fonts/'+$font+'_css/stylesheet.css');
+	}
+}
+@mixin centerInline() {
+	text-align: center;
+	> * {
+		display: inline-block;
+		text-align: left;
+		float: none;
+	}
+}
+@mixin tr($fun: 'e', $duration: 600) {
+	$duration: $duration + ms;
+	@if $fun == 'e' {
+		$res: ease;
+		-webkit-transition: all $duration $res;
+		-moz-transition: all $duration $res;
+		-ms-transition: all $duration $res;
+		-o-transition: all $duration $res;
+		transition: all $duration $res;
+	} @else if $fun == 'l' {
+		$res: linear;	
+		-webkit-transition: all $duration $res;
+		-moz-transition: all $duration $res;
+		-ms-transition: all $duration $res;
+		-o-transition: all $duration $res;
+		transition: all $duration $res;
+	} @else if $fun == 'ei' {
+		$res: ease-in;	
+		-webkit-transition: all $duration $res;
+		-moz-transition: all $duration $res;
+		-ms-transition: all $duration $res;
+		-o-transition: all $duration $res;
+		transition: all $duration $res;
+	} @else if $fun == 'eo' {
+		$res: ease-out;
+		-webkit-transition: all $duration $res;
+		-moz-transition: all $duration $res;
+		-ms-transition: all $duration $res;
+		-o-transition: all $duration $res;
+		transition: all $duration $res;
+	} @else if $fun == 'eio' {
+		$res: ease-in-out;	
+		-webkit-transition: all $duration $res;
+		-moz-transition: all $duration $res;
+		-ms-transition: all $duration $res;
+		-o-transition: all $duration $res;
+		transition: all $duration $res;
+	}
+}
