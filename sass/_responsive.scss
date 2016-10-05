@@ -19,6 +19,11 @@ $wid_5: 1200px;
 						min-height: 70px;
 						.mailMenu {
 							display: none;
+							li {
+								ul {
+									position: relative;
+								}
+							}
 						}
 						.mainMenuButton {
 							display: block;
@@ -47,6 +52,11 @@ $wid_5: 1200px;
 						min-height: 70px;
 						.mailMenu {
 							display: none;
+							li {
+								ul {
+									position: relative;
+								}
+							}
 						}
 						.mainMenuButton {
 							display: block;
@@ -82,6 +92,11 @@ $wid_5: 1200px;
 					.wrapper {
 						.mailMenu {
 							display: block;
+							li {
+								ul {
+									position: absolute;
+								}
+							}
 						}
 						.mainMenuButton {
 							display: none;
