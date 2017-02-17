@@ -1,0 +1,155 @@
+//imgs
+
+body {
+
+	//header
+
+	.header {
+		.container {
+			
+			// menu resp start
+
+			#{map-get($menuConfig, menu)} {
+				li {
+					float: left;
+					position: relative;
+					span {
+						display: inline-block;
+						box-sizing: border-box;
+						padding: 10px 15px;
+					}
+					#{map-get($menuConfig, subEl)} {
+						position: absolute;
+						display: block;
+						width: 80px;
+						left: 0;
+						background: #e5c5f5;
+						display: none;
+						li {
+
+						}
+					}
+				}
+			}
+
+			#{map-get($menuConfig, button)} {
+				height: 30px !important;
+				display: none;
+				width: 30px !important;
+				float: right;
+				span {
+					svg {
+						height: 30px !important;
+						width: 30px !important;
+						g {
+							path {
+								stroke: aqua;
+							}
+						}
+					}
+				}
+			}
+
+			// menu resp end
+
+		}
+	}
+	
+	//header
+}
+
+@media (max-width: $wid_1) {
+	
+	body {
+
+		.wrapper {
+			&.header {
+				.container {
+					.wrapper {
+						#{map-get($menuConfig, menu)} {
+							display: none;
+							li {
+								#{map-get($menuConfig, subEl)} {
+									position: relative;
+								}
+							}
+						}
+						#{map-get($menuConfig, button)} {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+@media (min-width: $wid_1) {
+
+	body {
+
+		.wrapper {
+			&.header {
+				.container {
+					.wrapper {
+						#{map-get($menuConfig, menu)} {
+							display: none;
+							li {
+								#{map-get($menuConfig, subEl)} {
+									position: relative;
+								}
+							}
+						}
+						#{map-get($menuConfig, button)} {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+@media (min-width: $wid_2) {
+
+}
+
+@media (min-width: $wid_3) {
+
+}
+
+@media (min-width: $wid_4) {
+
+	body {
+
+		.wrapper {
+			&.header {
+				.container {
+					.wrapper {
+						#{map-get($menuConfig, menu)} {
+							display: block;
+							li {
+								#{map-get($menuConfig, subEl)} {
+									position: absolute;
+								}
+							}
+						}
+						#{map-get($menuConfig, button)} {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+@media (min-width: $wid_5) {
+
+}

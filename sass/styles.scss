@@ -12,6 +12,12 @@ $c_main: #009D8D;
 //main dimentions
 $site_w: 980px;
 
+$wid_1: 400px;
+$wid_2: 550px;
+$wid_3: 750px;
+$wid_4: 1000px;
+$wid_5: 1200px;
+
 //some font constants
 $thin: 100;
 $light: 300;
@@ -23,6 +29,12 @@ $ubold: 900;
 
 $rob: 'Roboto', sans-serif;
 $ops: 'Open Sans', sans-serif;
+
+$menuConfig: (
+	button: '.mainButton',
+	menu: '.mailMenu',
+	subEl: '.sub-menu',
+);
 
 //some constant classes
 .container {
@@ -50,5 +62,6 @@ $ops: 'Open Sans', sans-serif;
 }
 
 @import "_main";
+@import "_menu";
 
 @import "_responsive.scss";

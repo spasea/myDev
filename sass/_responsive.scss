@@ -1,9 +1,3 @@
-$wid_1: 400px;
-$wid_2: 550px;
-$wid_3: 750px;
-$wid_4: 1000px;
-$wid_5: 1200px;
-
 @media (max-width: $wid_1) {
 	
 	.container {
@@ -17,17 +11,6 @@ $wid_5: 1200px;
 				.container {
 					.wrapper {
 						min-height: 70px;
-						.mailMenu {
-							display: none;
-							li {
-								ul {
-									position: relative;
-								}
-							}
-						}
-						.mainMenuButton {
-							display: block;
-						}
 					}
 				}
 			}
@@ -50,17 +33,6 @@ $wid_5: 1200px;
 				.container {
 					.wrapper {
 						min-height: 70px;
-						.mailMenu {
-							display: none;
-							li {
-								ul {
-									position: relative;
-								}
-							}
-						}
-						.mainMenuButton {
-							display: block;
-						}
 					}
 				}
 			}
@@ -88,21 +60,6 @@ $wid_5: 1200px;
 
 		.wrapper {
 			&.header {
-				.container {
-					.wrapper {
-						.mailMenu {
-							display: block;
-							li {
-								ul {
-									position: absolute;
-								}
-							}
-						}
-						.mainMenuButton {
-							display: none;
-						}
-					}
-				}
 			}
 		}
 
