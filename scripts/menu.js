@@ -105,7 +105,7 @@ function menuResizeble () {
 		
 		if ($(menuConfig.button).length > 0) {
 			$(menuConfig.menu).css({'display': 'table'});
-			$(menuConfig.menu + ' .sub-menu').css({'display': 'none'});
+			$(menuConfig.menu + ' ' + menuConfig.subEl).css({'display': 'none'});
 			$(menuConfig.button).addClass('fromLarge');
 		}
 
