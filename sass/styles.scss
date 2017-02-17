@@ -30,12 +30,6 @@ $ubold: 900;
 $rob: 'Roboto', sans-serif;
 $ops: 'Open Sans', sans-serif;
 
-$menuConfig: (
-	button: '.mainButton',
-	menu: '.mailMenu',
-	subEl: '.sub-menu',
-);
-
 //some constant classes
 .container {
 	@include center($site_w);
