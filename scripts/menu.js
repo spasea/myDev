@@ -2,7 +2,7 @@ var menuConfig = {
 	button: '.mainButton',
 	menu: '.mailMenu',
 	subEl: '.sub-menu',
-	siteW: 980,
+	siteW: 900,
 };
 
 $(document).ready(function() {
@@ -101,7 +101,7 @@ setTimeout( function () {
 } ,100);
 
 function menuResizeble () {
-	if ($(window).width() > 1000) {
+	if ($(window).width() > menuConfig.siteW) {
 		
 		if ($(menuConfig.button).length > 0) {
 			$(menuConfig.menu).css({'display': 'table'});
